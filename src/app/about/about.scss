@@ -1,0 +1,42 @@
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.golden-circle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* 三個區塊的基礎樣式 */
+.info-box {
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.what-box {
+  background-color: #fef08a; /* 淡淡的陽光黃 */
+  color: #713f12;
+}
+
+.how-box {
+  background-color: #f3f4f6; /* 科技感的淺灰 */
+  color: #1f2937;
+}
+
+/* Why 是靈魂核心！給牠一個顯眼的粉紅邊框和亮眼背景 */
+.why-box {
+  background-color: #fce7f3; /* 溫柔的櫻花粉 */
+  color: #831843;
+  border-left: 6px solid #ec4899; /* 左側醒目的粉紅粗線 */
+  font-weight: bold;
+}
+
+.info-box h3 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}

@@ -1,0 +1,58 @@
+.home-container {
+  max-width: 1000px; /* 限制最大寬度，網頁在大螢幕上才不會左右散開 */
+  margin: 0 auto; /* 讓整個內容置中 */
+  padding: 20px;
+}
+
+/* 頂部大區塊 (Hero Section) 漸層美化 */
+.hero-section {
+  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); /* 舒服的天空藍漸層 */
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 16px; /* 圓角加大，看起來更現代 */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* 淡淡的陰影 */
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #0369a1;
+  margin-bottom: 10px;
+}
+
+/* 網格排版：讓特色和對比可以並排或整齊排列 */
+.grid-container {
+  display: flex;
+  gap: 25px; /* 卡片之間的間距 */
+}
+
+/* 卡片通用樣式 */
+.card {
+  flex: 1; /* 讓兩張卡片平分寬度 */
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb; /* 細緻的淺色邊框 */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); /* 精緻的立體陰影 */
+  transition: transform 0.3s ease;
+}
+
+/* 滑鼠移到卡片上時會微微浮起來，非常有互動感！ */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #1e293b;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}

@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+/* 全站字體與背景美化 */
+body {
+  font-family: 'PingFang TC', 'Heiti TC', 'Microsoft JhengHei', sans-serif;
+  background-color: #f8f9fa; /* 柔和的淺灰色背景，比純白更有質感 */
+  color: #333333; /* 稍微帶灰的深色字，比純黑更溫柔、不傷眼 */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6; /* 讓行距變寬，閱讀起來更舒服 */
+}
+
+/* 讓超連結看起來不像傳統藍色底線那樣陽春 */
+a {
+  text-decoration: none;
+  color: #4f46e5; /* 質感的靛藍色 */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #312e81; /* 滑鼠移上去時變深藍 */
+}
