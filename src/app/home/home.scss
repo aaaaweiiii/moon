@@ -6,12 +6,22 @@
 
 /* 頂部大區塊 (Hero Section) 漸層美化 */
 .hero-section {
+  position: relative;
   background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); /* 舒服的天空藍漸層 */
   padding: 60px 20px;
   text-align: center;
   border-radius: 16px; /* 圓角加大，看起來更現代 */
   
   margin-bottom: 40px;
+}
+
+.hero-top-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
 }
 
 .hero-section h1 {
