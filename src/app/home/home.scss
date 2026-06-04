@@ -6,17 +6,17 @@
 
 /* 頂部大區塊 (Hero Section) 漸層美化 */
 .hero-section {
-  background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); /* 舒服的天空藍漸層 */
+  background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%); /* 舒服的天空藍漸層 */
   padding: 60px 20px;
   text-align: center;
   border-radius: 16px; /* 圓角加大，看起來更現代 */
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* 淡淡的陰影 */
+  
   margin-bottom: 40px;
 }
 
 .hero-section h1 {
   font-size: 2.5rem;
-  color: #0369a1;
+  color: #FFE0E0;
   margin-bottom: 10px;
 }
 
