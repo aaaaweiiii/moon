@@ -30,6 +30,63 @@
   margin-bottom: 10px;
 }
 
+/* 五個方框區塊 */
+.five-boxes {
+  display: flex;
+  gap: 24px;
+  margin-top: 40px;
+  align-items: flex-start;
+}
+
+.future-products,
+.product-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.future-products {//左邊
+  flex: 0 0 36%;
+  min-width: 220px;
+}
+
+.product-features {//右邊
+  flex: 1 1 62%;
+  min-width: 320px;
+}
+
+.box {//all box
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid #f0e8ef;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.future-box {//未來
+  min-height: 220px;
+  background: #f4f1f6;
+  color: #475569;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.feature-box {//特色
+  min-height: 140px;
+  background: #ffffff;
+  color: #1e293b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-features .feature-box:nth-child(2) {
+  background: #f7d3d9;
+  border-color: #f3c7ce;
+}
+
 /* 網格排版：讓特色和對比可以並排或整齊排列 */
 .grid-container {
   display: flex;
@@ -37,20 +94,7 @@
 }
 
 /* 卡片通用樣式 */
-.card {
-  flex: 1; /* 讓兩張卡片平分寬度 */
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  border: 1px solid #e5e7eb; /* 細緻的淺色邊框 */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); /* 精緻的立體陰影 */
-  transition: transform 0.3s ease;
-}
 
-/* 滑鼠移到卡片上時會微微浮起來，非常有互動感！ */
-.card:hover {
-  transform: translateY(-5px);
-}
 
 .card h2 {
   color: #1e293b;

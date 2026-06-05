@@ -1,0 +1,40 @@
+.team-intro {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.team-intro h2 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  color: #1e293b;
+}
+
+.team-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  flex: 1 1 28%;
+  min-width: 240px;
+  padding: 24px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.06);
+}
+
+.team-card h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 1.25rem;
+  color: #0f172a;
+}
+
+.team-card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+}
