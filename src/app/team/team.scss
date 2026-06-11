@@ -1,74 +1,95 @@
-.team-overview {
+.team-section {
   max-width: 1100px;
   margin: 0 auto;
   padding: 28px 20px;
-  display: flex;
-  gap: 28px;
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
 
-.team-content {
-  flex: 1 1 560px;
+.team-header {
+  text-align: center;
+  margin-bottom: 28px;
 }
 
-.team-content h2 {
-  margin: 0 0 12px 0;
-  font-size: 2.4rem;
+.team-header h2 {
+  margin: 0;
+  font-size: 2.6rem;
+  letter-spacing: 0.06em;
   color: #7f1d1d;
 }
 
-.team-content .intro {
+.team-header .team-intro {
+  margin: 16px auto 0;
+  max-width: 720px;
   color: #6b7280;
   line-height: 1.8;
-  margin-bottom: 18px;
 }
 
-.team-content h3 {
-  margin-top: 8px;
-  margin-bottom: 8px;
-  font-size: 1.1rem;
-  color: #7f1d1d;
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
 }
 
-.member-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  color: #374151;
-  line-height: 1.9;
-}
-
-.team-visual {
-  width: 320px;
+.team-card {
   display: flex;
-  align-items: flex-start;
+  gap: 18px;
+  padding: 22px;
+  border-radius: 24px;
+  background: rgba(247, 238, 240, 0.85);
+  border: 1px solid rgba(215, 184, 187, 0.6);
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+  min-height: 180px;
+}
+
+.member-avatar {
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: #f3e8e9;
+  flex-shrink: 0;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.visual-card {
-  width: 280px;
-  height: 360px;
-  border-radius: 18px;
-  background: #f7eef0;
-  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+.member-info h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #3f1b1d;
 }
 
-@media (max-width: 800px) {
-  .team-overview {
+.member-role {
+  margin: 8px 0 12px;
+  color: #a33f4f;
+  font-weight: 600;
+}
+
+.member-info p {
+  margin: 0;
+  color: #4b5563;
+  line-height: 1.75;
+}
+
+@media (max-width: 840px) {
+  .team-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .team-card {
     flex-direction: column;
-    padding: 20px;
+    align-items: center;
+    text-align: center;
   }
 
-  .team-visual {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 18px;
+  .member-avatar {
+    margin-bottom: 16px;
   }
 
-  .visual-card {
-    width: 90%;
-    height: 240px;
+  .member-info {
+    align-items: center;
   }
 }
