@@ -67,6 +67,14 @@
             }
           },
           "defaultConfiguration": "development"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/moon/",
+            "name": "aaaaweiiii",
+            "email": "winnieshih2009@gmail.com"
+          }
         }
       }
     }
