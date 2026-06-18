@@ -19,7 +19,7 @@
 }
 
 .what-box {
-  background-color: #fef08a; /* 淡淡的陽光黃 */
+  background-color: #f3c7ce; /* 淡淡的陽光黃 */
   color: #713f12;
 }
 
@@ -29,9 +29,10 @@
 }
 
 /* Why 是靈魂核心！給牠一個顯眼的粉紅邊框和亮眼背景 */
+
 .why-box {
   background-color: #FFE0E0; /* 溫柔的櫻花粉 */
-  color:  #fc8d8d;
+  color: #9d174d;
   border-left: 6px solid #FFE0E0; /* 左側醒目的粉紅粗線 */
   font-weight: bold;
 }
@@ -39,4 +40,35 @@
 .info-box h3 {
   margin-top: 0;
   font-size: 1.3rem;
+}
+
+.about-container h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  margin-top: 12px;
+  color: #334155;
+}
+
+.about-period {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.about-period img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 420px;
+}
+
+.about-period-text p {
+  margin: 0 0 16px;
+  color: #475569;
+  line-height: 1.8;
+}
+
+.about-period-text p:last-child {
+  margin-bottom: 0;
 }
